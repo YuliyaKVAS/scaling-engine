@@ -1,4 +1,7 @@
 $( function() {
+    $("#btn").click(function(){
+    $("ul").append('<li class="list-group-item">'+$("#inputdefault").val()+'</li>');
+    });
     $('.todo-list-container li').click(function(){
         if($(this).hasClass('active')){
             $(this).removeClass('active')
@@ -8,8 +11,6 @@ $( function() {
     })
     console.log("Ready")
 
-$("#btn").click(function(){
-$("ul").append('<li class="list-group-item">cat</li>');
-});
+
 })
 
