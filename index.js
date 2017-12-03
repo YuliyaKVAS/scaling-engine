@@ -7,4 +7,9 @@ $( function() {
         $(this).addClass('active')
     })
     console.log("Ready")
+
+$("#btn").click(function(){
+$("ul").append('<li class="list-group-item">cat</li>');
+});
 })
+
