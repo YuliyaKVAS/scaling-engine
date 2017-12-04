@@ -1,6 +1,13 @@
 $( function() {
     $("#btn").click(function(){
-    $("ul").append('<li class="list-group-item">'+$("#inputdefault").val()+'</li>');
+    if($("#inputdefault").val()!= ''){
+        $('#list').append('<li class="list-group-item">'+$("#inputdefault").val()+'</li>');
+    }
+
+    else {
+        alert("You have not written task!");
+    }
+
     });
     $('.todo-list-container li').click(function(){
         if($(this).hasClass('active')){
@@ -11,6 +18,7 @@ $( function() {
     })
     console.log("Ready")
 
+    console.log($("ul li"))
 
 })
 
