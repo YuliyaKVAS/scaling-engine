@@ -13,9 +13,12 @@ $( function() {
             var $newItemElement = $('<li class="list-group-item">'+$("#inputdefault").val()+'</li>')//Create new element using jQuery
             initItems($newItemElement)//We have to bind click to newly created item, that is why it was not working before
             $('#list').append($newItemElement);//Append new element to the list
+            $("#inputdefault").val("")// After adding newItemElement clear textbox
         }else {
             alert("You have not written task!");
         }
+
+
 
     });
     initItems($('.todo-list-container li'))
