@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8"> <!--comment -->
-    <title>title</title>
+    <title>To-do List</title>
     <link rel="stylesheet" href="bootstrap-3.3.2/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-3.3.2/css/bootstrap-theme.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script src="bootstrap-3.3.2/js/bootstrap.js"></script>
     <script src="index.js"></script>
+    <style>
+    button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    h1 {
+    color: green;
+    text-align: center;
+    text-shadow: 3px 2px blue;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-variant: small-caps;
+    }
+
+    body {
+    background-image: url("labrador-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    </style>
+
+
 </head>
 <body>
-    <h1>TODO List</h1>
+    <h1>To-Do List</h1>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">-->
+        <!--Launch demo modal-->
+    <!--</button>-->
     <!-- add button -->
-    <button id = "btn" type="button" class="btn btn-outline-primary">Add</button>
+    <button id = "btn" type="button" class="btn btn-outline-primary">add to to-do list</button>
     <!-- add input textbox -->
-    <form>
+    <form id ="myForm">
         <div class="form-group">
-        <label for="inputdefault">Default input</label>
+        <label for="inputdefault">enter the business you want to do</label>
         <input class="form-control" id="inputdefault" type="text">
         </div>
     </form>
@@ -49,9 +81,9 @@
     </div>
 
     <ul class="todo-list-container list-group" id="list">
-        <li class="list-group-item">First</li>
-        <li class="list-group-item">Second</li>
-        <li class="list-group-item">Third</li>
+        <!--<li class="list-group-item">Item</li>-->
+        <!--<li class="list-group-item">Item</li>-->
+        <!--<li class="list-group-item">Item</li>-->
     </ul>
 </body>
 </html>
