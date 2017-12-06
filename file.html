@@ -11,30 +11,41 @@
     <script src="index.js"></script>
     <style>
     button {
-    background-color: #4CAF50; /* Green */
+    background-color: #800080; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
 }
     h1 {
-    color: green;
+    color:  #ff00ff;
     text-align: center;
-    text-shadow: 3px 2px blue;
+    text-shadow: 3px 2px #800080;
     font-family: "Times New Roman", Times, serif;
     font-size: 50px;
     font-variant: small-caps;
     }
 
     body {
-    background-image: url("labrador-8.jpg");
+    background-image: url("font.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    }
+
+    label{
+    color: #ff00ff;
+    text-align: center;
+    text-shadow: 1px 2px #800080;
+    <!--text-shadow: 3px 2px blue;-->
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: oblique
     }
 
     </style>
@@ -49,7 +60,7 @@
         <!--Launch demo modal-->
     <!--</button>-->
     <!-- add button -->
-    <button id = "btn" type="button" class="btn btn-outline-primary">add to to-do list</button>
+    <button id = "btn" type="button" class="btn btn-outline-primary">Add to to-do list</button>
     <!-- add input textbox -->
     <form id ="myForm">
         <div class="form-group">
@@ -80,10 +91,20 @@
         </div>
     </div>
 
+
+    <!--<div id="checkboxes">-->
     <ul class="todo-list-container list-group" id="list">
-        <!--<li class="list-group-item">Item</li>-->
+        <!--<li input type="checkbox" class="list-group-item">Item</li>-->
         <!--<li class="list-group-item">Item</li>-->
         <!--<li class="list-group-item">Item</li>-->
     </ul>
+    <!--</div>-->
+    <a href="https://www.instagram.com/?hl=ru">
+        <img src="insta_logo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+    </a>
+
+    <a href="https://vk.com/id154603815">
+        <img src="vk_logo.png" alt="HTML tutorial" style="width:30px;height:30px;border:0">
+    </a>
 </body>
 </html>
